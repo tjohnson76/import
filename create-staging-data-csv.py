@@ -5,7 +5,7 @@ import csv
 from pymarc import MARCReader
 
 # create a CSV file - note tab delimiter would be '/t'
-csv_out = csv.writer(open('scottsboro.csv', 'w'), delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
+csv_out = csv.writer(open('marc_records.csv', 'w'), delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
 
 # write a header row in your CSV file
 csv_out.writerow(['bibkey','location', 'owning_lib', 'callnum_prefix', 'callnum', 'callnum_suffix', 'barcode', 'item_type'])
