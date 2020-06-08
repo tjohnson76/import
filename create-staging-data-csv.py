@@ -11,7 +11,7 @@ csv_out = csv.writer(open('marc_records.csv', 'w'), delimiter=',', quotechar='"'
 csv_out.writerow(['bibkey','location', 'owning_lib', 'callnum_prefix', 'callnum', 'callnum_suffix', 'barcode', 'item_type'])
 
 # trim OCLC number prefixes (ocn, ocm, OCoLC)
-with open('scottsboro.mrc', 'rb') as fh:
+with open('marc_records.mrc', 'rb') as fh:
     reader = MARCReader(fh)
     for record in reader:
 
